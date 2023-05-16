@@ -9,11 +9,10 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class GameListDTO {
     private Long id;
-
     private String name;
 
-    public GameListDTO(GameList gameList){
-        id = gameList.getId();
-        name = gameList.getName();
+    public GameListDTO(GameList entity) {
+        id = entity.getId();
+        name = entity.getName();
     }
 }
