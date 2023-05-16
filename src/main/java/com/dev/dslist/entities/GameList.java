@@ -9,32 +9,24 @@ import java.util.Objects;
 
 
 @Entity
-@Table(name = "tb_game")
+@Table(name = "tb_game_list")
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Game {
+public class GameList {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String title;
-    private Double score;
-    @Column(name = "game_year")
-    private Integer year;
-    private String genre;
-    private String platforms;
-    private String imgURL;
-    @Column(columnDefinition = "TEXT")
-    private String shortDescription;
-    @Column(columnDefinition = "TEXT")
-    private String longDescription;
+    private String name;
+
 
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Game game = (Game) o;
-        return Objects.equals(id, game.id);
+        GameList gameList = (GameList) o;
+        return Objects.equals(id, gameList.id);
     }
 
     @Override

@@ -2,7 +2,9 @@ package com.dev.dslist.dto;
 
 import com.dev.dslist.entities.Game;
 import jakarta.persistence.Column;
+import lombok.Data;
 
+@Data
 public class GameMiniDTO {
     private Long Id;
     private String title;
@@ -18,35 +20,9 @@ public class GameMiniDTO {
         Id = game.getId();
         title = game.getTitle();
         shortDescription = game.getShortDescription();
-        imgURL = game.getImgURI();
+        imgURL = game.getImgURL();
         year = game.getYear();
         score = game.getScore();
     }
 
-    public GameMiniDTO() {
-    }
-
-    public Long getId() {
-        return Id;
-    }
-
-    public String getTitle() {
-        return title;
-    }
-
-    public Double getScore() {
-        return score;
-    }
-
-    public Integer getYear() {
-        return year;
-    }
-
-    public String getImgURL() {
-        return imgURL;
-    }
-
-    public String getShortDescription() {
-        return shortDescription;
-    }
 }
