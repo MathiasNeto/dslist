@@ -1,9 +1,9 @@
-# Sistema de Alocacao de Filmes
-Este e um sitema para alocacao de filmes que contem varios conceitos importantes sobre API Rest, neste sistema sera possivel:
-* Alocacao de filmes
-* Atualizacao de filmes
-* Remocao de filmes
-* Busca de filmes
+# Sistema de Alocacao de Jogos
+Este e um sitema para alocacao de Jogos que contem varios conceitos importantes sobre API Rest, neste sistema sera possivel:
+* Alocacao de Jogos
+* Atualizacao de Jogos
+* Remocao de Jogos
+* Busca de Jogos
 
 
 # Caso queira baixar o projeto para praticar siga os passos abaixo:
