@@ -6,24 +6,23 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.springframework.beans.BeanUtils;
 
-import java.util.Optional;
+
 
 @Data
 @NoArgsConstructor
 public class GameDTO {
-    private Long Id;
+    private Long id;
     private String title;
     private Integer year;
     private String genre;
     private String platforms;
     private Double score;
-    private String imgURL;
+    private String img_Url;
     private String shortDescription;
     private String longDescription;
 
-
-    public GameDTO(Game game){
-        BeanUtils.copyProperties(game, this);
+    public GameDTO(Game entity) {
+        BeanUtils.copyProperties(entity, this);
     }
 
 }
